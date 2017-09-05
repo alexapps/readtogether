@@ -10,8 +10,8 @@ public class User {
     private String id;
     private String login;
     private String password;
-    private String[] subscribtion;
-    private String[] roles;
+    private Subscribtion[] subscribtion;
+    private Role[] roles;
 
     public String getId() {
         return id;
@@ -37,19 +37,20 @@ public class User {
         this.password = password;
     }
 
-    public String[] getSubscribtion() {
+
+    public Subscribtion[] getSubscribtion() {
         return subscribtion;
     }
 
-    public void setSubscribtion(String[] subscribtion) {
+    public void setSubscribtion(Subscribtion[] subscribtion) {
         this.subscribtion = subscribtion;
     }
 
-    public String[] getRoles() {
+    public Role[] getRoles() {
         return roles;
     }
 
-    public void setRoles(String[] roles) {
+    public void setRoles(Role[] roles) {
         this.roles = roles;
     }
 }
